@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Agency - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">The RainDrop</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-heading"> The RainDrop</div>
+          <div class="intro-lead-in">A Weather Forecasting Enchanted Object</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">The RainDrop</h2>
+            <h3 class="section-subheading text-muted">The RainDrop sits beautifully and unobstrosively in your space, giving you a calm insight into the next 60 minutes of rain. Much like an analog clock, a simple glance gives you all the information you need, and helps you focus on more important things, spending less time pulling out your phone or computer.</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-5">
+            <span>
+            <h4 class="service-heading">In Action</h4>
+            <img id="RDicon" src="../img/RD-changes/full.jpg" alt="slider" style="width:300px;" class="mx-auto">
+          </div>
+          <div class="col-md-7">
+            <h4 class="service-heading">Choose your forecast</h4>
+            <div>
+              <button class="button" type="button" id="none" onclick="onClick(this.id)">No Rain</button>
+              <button class = "button button-en" type="button" id="storm" onclick="onClick(this.id)">Heavy Storm</button>
+              <button class="button" type="button" id="half" onclick="onClick(this.id)">Rain Start and Stop</button>
+            <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+    </section>
+
+
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div style="background: rgba(95, 154, 294, 0.9);  border-top-left-radius: 25px; border-top-right-radius: 25px;" class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Sparks Your Interest?</h2>
+            <hr class="my-4">
+            <p class="mb-5">Any questions? Or would you like to purchase a unit? Get in touch</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center" style="background: rgba(95, 154, 294, 0.9); border-bottom-left-radius: 25px;">
+            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a href="mailto:swoolfdesign@gmail.com">Send an email</a>
+            </p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center" style="background: rgba(95, 154, 294, 0.9 );  border-bottom-right-radius: 25px;">
+            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a href="mailto:swoolfdesign@gmail.com">Buy A RainDrop today!</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; Woolf 2018</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script>
+    var minutelyStorm = [0.7355,0.6635,0.5925,0.529,0.493,0.4925,0.5105,0.528,0.529,0.506,0.475,0.4445,0.4175,0.395,0.378,0.3695,0.38,0.3755,0.3705,0.3695,0.367,0.366,0.366,0.365,0.365,0.364,0.3635,0.362,0.3605,0.3585,0.33,0.31,0.32,0.31,0.34,0.346,0.344,0.34349999999999997,0.34349999999999997,0.34249999999999997,0.34049999999999997,0.3445,0.3455,0.34349999999999997,0.3445,0.347,0.3465,0.348,0.36,0.375,0.4,0.41,0.44,0.42,0.41,0.44,0.47,0.4,0.38,0.3565,0.357]
+    var minutelyHalf = [0,0,0,0,0,0,0,0,0,0,0,0,0.03,0.06,0.1,0.1,0.12,0.12,0.12,0.12,0.14,0.14,0.14,0.14,0.16,0.16,0.16,0.16,0.18,0.18,0.18,0.18,0.18,0.16,0.12,0.08,0.06,0.06,0.06,0.03,0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0];
+    var minutelyNone =[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+    var data = minutelyStorm;
+      function onClick(buttonID){
+        document.getElementById('none').classList.remove("button-en");
+        document.getElementById('half').classList.remove("button-en");
+        document.getElementById('storm').classList.remove("button-en");
+        document.getElementById(buttonID).classList.add("button-en");
+        if(buttonID=="none"){
+          data=minutelyNone;
+          document.getElementById("RDicon").src="../img/RD-changes/none.jpg"
+        }
+        if(buttonID=="half"){
+          data=minutelyHalf;
+          document.getElementById("RDicon").src="../img/RD-changes/half.jpg"
+        }
+        if(buttonID=="storm"){
+          data=minutelyStorm;
+          document.getElementById("RDicon").src="../img/RD-changes/full.jpg"
+        }
+      }
+
+      window.onload = function () {
+
+      var dps = []; // dataPoints
+      var yLabels=[ "Light", "Medium", "Heavy", ""];
+
+      var chart = new CanvasJS.Chart("chartContainer", {
+      	title :{
+      	},
+      	axisY: {
+      		includeZero: false,
+          maximum: .8,
+          minimum: 0.01,
+          title: "Rain Intensity",
+          interval: 0.2,
+          labelFormatter: function(e){
+              return yLabels[ e.value/.25 | 0]
+      				return  e.label + "min";
+      			}
+
+      	},
+        axisX: {
+          labelFormatter: function(e){
+      				return  e.value + "min";
+      			}
+        },
+      	data: [{
+      		type: "splineArea",
+      		dataPoints: dps
+      	}]
+      });
+
+      var xVal = 0;
+      var yVal = 100;
+      var updateInterval = 100;
+      var dataLength = 60; // number of dataPoints visible at any point
+      var minutely = [];
+      // var minutelyStorm = [0.7355,0.6635,0.5925,0.529,0.493,0.4925,0.5105,0.528,0.529,0.506,0.475,0.4445,0.4175,0.395,0.378,0.3695,0.38,0.3755,0.3705,0.3695,0.367,0.366,0.366,0.365,0.365,0.364,0.3635,0.362,0.3605,0.3585,0.33,0.31,0.32,0.31,0.34,0.346,0.344,0.34349999999999997,0.34349999999999997,0.34249999999999997,0.34049999999999997,0.3445,0.3455,0.34349999999999997,0.3445,0.347,0.3465,0.348,0.36,0.375,0.4,0.41,0.44,0.42,0.41,0.44,0.47,0.4,0.38,0.3565,0.357]
+      // var minutelyHalf = [0,0,0,0,0,0,0,0,0,0,0,0,0.03,0.06,0.1,0.1,0.12,0.12,0.12,0.12,0.14,0.14,0.14,0.14,0.16,0.16,0.16,0.16,0.18,0.18,0.18,0.18,0.18,0.16,0.12,0.08,0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.06,0.03,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0];
+      // var minutelyNone =[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+      // var data = minutelyStorm;
+
+      var updateChart = function (count) {
+      	for (var j = 0; j < dataLength; j++) {
+          if (data[j] ==0){yVal =0}
+          else{
+      		  yVal = data[j]+.01*(.5-Math.random()) + (0.02*(.5-Math.random()))*Math.sin(2*j/dataLength+ 2*(.5-Math.random())  );
+          }
+          // console.log(yVal);
+      		dps[j]={
+      			x: j,
+      			y: yVal,
+            label: "High"
+      		};
+      		xVal++;
+      	}
+      	chart.render();
+      };
+
+      updateChart(dataLength);
+      setInterval(function(){updateChart()}, updateInterval);
+
+      }
+    </script>
+
+  </body>
+
+</html>
